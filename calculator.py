@@ -67,7 +67,8 @@ def main():
             if second == 0:
                 print("Error: Cannot divide by zero.")
             else:
-                print("Division result:", division(first, second))
+                result = division(first, second)
+                print("Division result:", result)
 
         except ValueError:
             print("Invalid input. Please enter numbers only.")
