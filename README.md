@@ -30,10 +30,8 @@ Calculator Master is a simple menu-driven Python calculator developed using Pyth
 - Division-by-zero handling
 - Exit option
 
-## Git Workflow
-
-Each calculator operation was developed using a separate feature branch. Each feature branch contains at least two meaningful commits before being submitted through a pull request. After review and approval, each pull request is merged into the main branch.
-
 ## Sample Execution
 
-The final calculator allows the user to select an operation, enter two numbers, and receive the calculated result. Invalid inputs and division by zero are handled appropriately.
+![Sample Execution 1](sample1.png)
+
+![Sample Execution 2](sample2.png)
