@@ -45,7 +45,8 @@ def main():
         try:
             first = float(input("Enter first number: "))
             second = float(input("Enter second number: "))
-            print("Subtraction result:", subtraction(first, second))
+            result = subtraction(first, second)
+            print("Subtraction result:", result)
         except ValueError:
             print("Invalid input. Please enter numbers only.")
 
