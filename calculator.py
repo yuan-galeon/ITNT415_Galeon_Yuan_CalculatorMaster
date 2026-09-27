@@ -17,7 +17,7 @@ def multiplication(a, b):
 
 
 def division(a, b):
-    pass
+    return a / b
 
 
 def main():
@@ -56,6 +56,19 @@ def main():
             second = float(input("Enter second number: "))
             result = multiplication(first, second)
             print("Multiplication result:", result)
+        except ValueError:
+            print("Invalid input. Please enter numbers only.")
+
+    elif choice == "4":
+        try:
+            first = float(input("Enter first number: "))
+            second = float(input("Enter second number: "))
+
+            if second == 0:
+                print("Error: Cannot divide by zero.")
+            else:
+                print("Division result:", division(first, second))
+
         except ValueError:
             print("Invalid input. Please enter numbers only.")
 
