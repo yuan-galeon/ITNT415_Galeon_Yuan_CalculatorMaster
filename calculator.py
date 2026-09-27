@@ -9,7 +9,7 @@ def addition(a, b):
 
 
 def subtraction(a, b):
-    pass
+    return a - b
 
 
 def multiplication(a, b):
@@ -38,6 +38,14 @@ def main():
             first = float(input("Enter first number: "))
             second = float(input("Enter second number: "))
             print("Addition result:", addition(first, second))
+        except ValueError:
+            print("Invalid input. Please enter numbers only.")
+
+    elif choice == "2":
+        try:
+            first = float(input("Enter first number: "))
+            second = float(input("Enter second number: "))
+            print("Subtraction result:", subtraction(first, second))
         except ValueError:
             print("Invalid input. Please enter numbers only.")
 
