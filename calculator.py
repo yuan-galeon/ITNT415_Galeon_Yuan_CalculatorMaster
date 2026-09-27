@@ -34,9 +34,12 @@ def main():
     choice = input("Choose an option: ")
 
     if choice == "1":
-        first = float(input("Enter first number: "))
-        second = float(input("Enter second number: "))
-        print("Addition result:", addition(first, second))
+        try:
+            first = float(input("Enter first number: "))
+            second = float(input("Enter second number: "))
+            print("Addition result:", addition(first, second))
+        except ValueError:
+            print("Invalid input. Please enter numbers only.")
 
 
 if __name__ == "__main__":
