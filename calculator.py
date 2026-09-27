@@ -13,7 +13,7 @@ def subtraction(a, b):
 
 
 def multiplication(a, b):
-    pass
+    return a * b
 
 
 def division(a, b):
@@ -50,6 +50,14 @@ def main():
         except ValueError:
             print("Invalid input. Please enter numbers only.")
 
+    elif choice == "3":
+        try:
+            first = float(input("Enter first number: "))
+            second = float(input("Enter second number: "))
+            result = multiplication(first, second)
+            print("Multiplication result:", result)
+        except ValueError:
+            print("Invalid input. Please enter numbers only.")
 
 if __name__ == "__main__":
     main()
