@@ -1,11 +1,11 @@
 # Calculator Master
 # Student: Yuan Galeon
 # Course and Section: BIT41
-# Main branch - calculator skeleton
+# Feature branch: addition_Galeon
 
 
 def addition(a, b):
-    pass
+    return a + b
 
 
 def subtraction(a, b):
@@ -30,6 +30,13 @@ def main():
     print("4. Division")
     print("5. Exit")
     print("=================================")
+
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        first = float(input("Enter first number: "))
+        second = float(input("Enter second number: "))
+        print("Addition result:", addition(first, second))
 
 
 if __name__ == "__main__":
